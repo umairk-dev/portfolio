@@ -1,0 +1,17 @@
+
+.social{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color:#ffffff;
+    .icon{
+        padding: 10px;
+    }
+
+    
+    a{
+        :hover{
+            font-size: 40px;
+        }
+    }
+}
