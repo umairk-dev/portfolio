@@ -9,7 +9,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Home from './pages/homepage/home-page';
-import Projects from './pages/projects';
+import Projects from './pages/projects/projects-page';
 import Resume from './pages/resume';
 import Header from './components/header/header-component';
 

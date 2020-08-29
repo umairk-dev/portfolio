@@ -1,0 +1,25 @@
+.project-menu{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .menu-item{
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 2px;
+        
+        &:hover{
+            background-color: yellowgreen;
+            color:white;
+            cursor: pointer;
+        }
+    }
+    
+    .active{
+        background-color: yellowgreen;
+        color:white;
+    }
+}
