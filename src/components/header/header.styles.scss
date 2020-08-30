@@ -1,13 +1,12 @@
 .header{
-    height: 70px;
     widows: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color:yellowgreen;
 
     .options {
         width: 50%;
-        height: 100%;
         display: flex;
         justify-content: flex-end;
         align-content: center;
@@ -17,6 +16,28 @@
             cursor: pointer;
             color: white;
             text-decoration: none ;
+            text-align: center;
+
+            &:hover{
+                background-color: green;
+                border-radius: 5px;
+            }        
         }
+    }
+
+    .home{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+
+        text-align: center;
+
+        font-size: 18px;
+
+        &:hover{
+            font-size: 20px;
+            border-radius: 5px;
+
+        }    
     }
 }

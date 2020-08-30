@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './header.styles.scss';
 
@@ -10,12 +11,12 @@ class Header extends React.Component {
             return(
                 <div className="header" >
                     <Link to="/">
-                    Umair
+                        <div className="home">
+                            <FontAwesomeIcon className="icon" color="white" icon={["fas", "home"]} />
+                        </div>
                     </Link>
                     <div className="options">
-                        <Link className="option" to="/about">
-                            About
-                        </Link>
+                        
                         <Link className="option" to="/projects">
                             Projects
                         </Link>

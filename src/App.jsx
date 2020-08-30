@@ -29,7 +29,6 @@ class App extends React.Component {
                className="switch-wrapper"
                >
                <Route exact path="/" component={Home}/>
-               <Route exact path="/about" component={About}/>
                <Route exact path="/resume" component={Resume}/>
                <Route exact path="/projects" component={Projects}/>
 
