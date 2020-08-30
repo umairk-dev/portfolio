@@ -3,7 +3,7 @@ import React from 'react';
 import './gallery-menu.styles.scss';
 
 
-const GalleryMenu = ({hasVideo, hasImage, active, handleClick}) => {
+const GalleryMenu = ({hasVideo, hasImage, hasStack, active, handleClick}) => {
     return(
         <div className="gallery-menu">
             { 
@@ -20,7 +20,11 @@ const GalleryMenu = ({hasVideo, hasImage, active, handleClick}) => {
                     null
                 )
             }
-            <div onClick={()=> handleClick("stack")}  className={`gallery-menu-item ${active === "stack" ? "active" : null}`}> Stack</div>
+            {
+                hasStack ? (
+                    <div onClick={()=> handleClick("stack")}  className={`gallery-menu-item ${active === "stack" ? "active" : null}`}> Stack</div>
+                ):(null)
+            }
         </div>
        
     )

@@ -23,7 +23,7 @@ const ProjectDetail = ({item}) =>{
                     <Tags tags={item.tags} />
                     <div className="desc">
                         {item.description}
-                        {item.features ? (
+                        {item.features.length> 0 ? (
                             <div>
                                 <h2>Features:</h2>
                                 <ul>
@@ -39,16 +39,7 @@ const ProjectDetail = ({item}) =>{
                     </div>
                 </div>
             </div>
-            <div className="actions">
-                <button
-                    className="button"
-                    onClick={() => {
-                    console.log("modal closed ");
-                    }}
-                >
-                    close modal
-                </button>
-            </div>
+           
         
         </div>
     );

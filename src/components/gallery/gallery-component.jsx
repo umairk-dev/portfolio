@@ -8,19 +8,42 @@ import ReactPlayer from "react-player"
 import 'react-alice-carousel/lib/alice-carousel.css'
 class Gallery extends React.Component {
 
+   
+    
     constructor(props) {
         super(props);
+
         this.state = {
-          current: "image",
+            current: "image",
         };
+
+        if(this.props.item.images.length === 0){
+            if(this.props.hasVideo === false){
+                this.state = {
+                    current: "stack",
+                };
+            }else{
+                this.state = {
+                    current: "video",
+                };
+            }
+        }
+
+       
+
+        
     }
 
     
     
     render() {
+        
       //  const { collections } = this.state;
-        const {hasVideo, video,images,stack} = this.props.item;
-        const hasImage = images.length > 0
+      
+      const {hasVideo, video,images,stack} = this.props.item;
+      const hasImage = images.length > 0
+      const hasStack = stack.length > 0
+      
         const handleOnDragStart = (e) => e.preventDefault()
         const handleMenuClick = (select) => {
             this.setState({current : select});
@@ -29,14 +52,14 @@ class Gallery extends React.Component {
         return (
             <div className="gallery">
                 
-                <GalleryMenu hasVideo= {hasVideo} hasImage = {hasImage} active={this.state.current} handleClick = {handleMenuClick}/>
+                <GalleryMenu hasVideo= {hasVideo} hasImage = {hasImage} hasStack = {hasStack} active={this.state.current} handleClick = {handleMenuClick}/>
 
 
                 {this.state.current ===  "video" &&  hasVideo ? (
                     <ReactPlayer
                         url={`${video}`}
                         width='100%'
-                        height='100%'
+                        height='80%'
                         />
                 ):(
                 null
@@ -45,12 +68,12 @@ class Gallery extends React.Component {
                 {this.state.current === "image" && hasImage > 0 ? (
                     <AliceCarousel mouseTrackingEnabled  buttonsDisabled={true}>
                         {images.map((image,key) => (
-                        <img key={key} src={`/static/images/${image}`} onDragStart={handleOnDragStart} height="300px" />
+                        <img key={key} src={`/static/images/${image}`} onDragStart={handleOnDragStart} height="350px" />
                         ))}
                     </AliceCarousel>
                 ):(null)}
                         
-                {this.state.current === "stack" ? (
+                {this.state.current === "stack" && stack.length > 0 ? (
                     <div className="stack" dangerouslySetInnerHTML={ { __html: stack } }></div>
 
                 ):(null)}

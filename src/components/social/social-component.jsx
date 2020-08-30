@@ -18,6 +18,9 @@ function Social({addColor}) {
                             <a target="_blank" rel="noopener noreferrer"  className="youtube" href="https://www.youtube.com/channel/UCyXq99DImp_GOKTvXkKKe-A">
                                 <SocialIcon  className="icon" color={'red'} type={"fab"} name={"youtube"}/>
                             </a> 
+                            <a target="_blank" rel="noopener noreferrer"  className="youtube" href="https://stackoverflow.com/users/1235656/umair?tab=profile">
+                                <SocialIcon  className="icon" color={'orange'} type={"fab"} name={"stack-overflow"}/>
+                            </a> 
                         </div>
                     ):(
                         <div className="social">
@@ -29,6 +32,10 @@ function Social({addColor}) {
                             </a>
                             <a target="_blank" rel="noopener noreferrer"  className="youtube" href="https://www.youtube.com/channel/UCyXq99DImp_GOKTvXkKKe-A">
                                 <SocialIcon  className="icon" color={'#fff'} type={"fab"} name={"youtube"}/>
+                            </a> 
+
+                            <a target="_blank" rel="noopener noreferrer"  className="youtube" href="https://stackoverflow.com/users/1235656/umair?tab=profile">
+                                <SocialIcon  className="icon" color={'#fff'} type={"fab"} name={"stack-overflow"}/>
                             </a> 
                         </div>
                     )

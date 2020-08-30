@@ -1,14 +1,16 @@
 .links{
-    font-size: 30px;
     justify-content: space-around;
+    align-content: center;
     display: flex;
-
+    font-size: 20px;
     .link{
         padding: 10px;
-           
+        font-size: 30px;
         &:hover{
            font-size: 35px;
             
         }
     }
+
+
 }
