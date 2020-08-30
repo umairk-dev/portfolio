@@ -1,0 +1,43 @@
+.education-item{
+    justify-content: start;
+    align-content: flex-start;
+
+    .title{
+        display: flex;
+        padding: 10px;
+        font-weight: bold;
+        justify-content: space-between;
+        align-content: center;
+        .year{
+            font-size: 20px;
+
+        }
+
+        .degree{
+            font-size: 20px;
+        }
+    }
+
+    .logo{
+        padding: 10px;
+        justify-content: end;
+    }
+
+    .university{
+        font-size: 15px;
+        padding: 10px;
+        font-weight: bold;
+        justify-content: start;
+        align-content: flex-start;
+        text-align: start;
+    }
+
+
+    .project{    
+        padding: 10px;
+        font-size: 15px;
+        text-align: start;
+    }
+
+
+}

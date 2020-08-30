@@ -3,7 +3,6 @@ import React from 'react';
 
 import './project-link.styles.scss';
 import SocialIcon from '../social/social-icon-component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const ProjectLink = ({website, playstore, github}) => {

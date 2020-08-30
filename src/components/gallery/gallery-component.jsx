@@ -1,11 +1,11 @@
 import React from 'react';
 
 import './gallery.styles.scss';
-import GalleryMenu from '../gallery-menu/gallery-menu-component';
 import AliceCarousel from 'react-alice-carousel'
 import ReactPlayer from "react-player"
 
 import 'react-alice-carousel/lib/alice-carousel.css'
+import GalleryMenu from './gallery-menu/gallery-menu-component';
 class Gallery extends React.Component {
 
    
@@ -40,7 +40,7 @@ class Gallery extends React.Component {
         
       //  const { collections } = this.state;
       
-      const {hasVideo, video,images,stack} = this.props.item;
+      const {hasVideo, video,images,stack,name} = this.props.item;
       const hasImage = images.length > 0
       const hasStack = stack.length > 0
       
@@ -68,7 +68,7 @@ class Gallery extends React.Component {
                 {this.state.current === "image" && hasImage > 0 ? (
                     <AliceCarousel mouseTrackingEnabled  buttonsDisabled={true}>
                         {images.map((image,key) => (
-                        <img key={key} src={`/static/images/${image}`} onDragStart={handleOnDragStart} height="350px" />
+                        <img alt={name} key={key} src={`/static/images/${image}`} onDragStart={handleOnDragStart} height="350px" />
                         ))}
                     </AliceCarousel>
                 ):(null)}

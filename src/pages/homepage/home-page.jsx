@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Typing from 'react-typing-animation';
 
 import './home.styles.scss';

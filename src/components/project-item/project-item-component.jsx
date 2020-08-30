@@ -17,7 +17,7 @@ const ProjectItem = ({ item, history, match }) => {
                 <div className="title">{item.name}</div>
 
                     <div className="image">
-                        <img src={`/static/images/${item.preview}`}/>
+                        <img alt={item.name} src={`/static/images/${item.preview}`}/>
                     </div>
                 </div>
 

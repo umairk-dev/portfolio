@@ -29,23 +29,16 @@ class Projects extends React.Component{
 
 
     check(tags){
-    //  var strings_to_check = ["a", "b", "c"],
-    //  test_arrrays = [ [ "a", "c", "e", "g"], [ "v", "x", "y", "z"] ],
       var res = false;
       if(this.state.active.length > 0){
-        //console.log("Tags = " + tags);
         tags.map(v => {
-          //console.log(v);
-          //this.state.active.some(c => this.state.active.indexOf(c) > -1);
           if(this.state.active.indexOf(v) > -1){
              res = true;
           }
-         // v.some(c => this.state.active.indexOf(c) > -1);
         })
       }else{
         res = true;
       }
-      //console.log(res);
       return res;
 
     }
@@ -65,12 +58,9 @@ class Projects extends React.Component{
           <ProjectMenu current={this.state.current} handleActive={this.handleActive.bind(this)}/>
           <div className="items">
             {projects.map((item) => 
-              //{
                 (this.check(item.tags) === true ? (
                   <ProjectItem key={item._id} item={item} />
                 ) : (null))
-             // }
-               
             )}
           </div>
         </div>

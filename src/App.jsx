@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
-
-
-
-import logo from './logo.svg';
 import './App.css';
 
 import Home from './pages/homepage/home-page';
 import Projects from './pages/projects/projects-page';
-import Resume from './pages/resume';
+import Resume from './pages/resume/resume-page';
 import Header from './components/header/header-component';
 
 import About from './pages/about/about-component';
