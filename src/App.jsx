@@ -16,11 +16,12 @@ import Header from './components/header/header-component';
 import About from './pages/about/about-component';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 import { AnimatedSwitch } from 'react-router-transition';
 
 
-library.add(fab,faCheckSquare, faCoffee);
+library.add(fab,fas);
 class App extends React.Component {
   render() {
      return (

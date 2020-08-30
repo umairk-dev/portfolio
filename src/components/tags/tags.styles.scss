@@ -1,0 +1,21 @@
+
+    .tags{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap ;
+
+        .tag{
+            background-color: tomato;
+            border-radius: 30px;
+            color:#fff;
+            padding: 5px;
+            font-size: 8px;
+            margin: 2px;
+            
+        }
+
+    }
+
+   

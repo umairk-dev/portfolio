@@ -1,10 +1,11 @@
 .project-item{
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: #fff;
     
+    overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -12,9 +13,6 @@
     margin: 10px;
     cursor: pointer;
 
-    :hover .content{
-        display: block;
-    }
 
     .title{
         font-size: 20px;
@@ -25,56 +23,50 @@
 
    
     .image {
-        width: 240px;
-        height: 170px;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
+    
     }
 
-    .image img {
-        width: 400px;
-        height: 300px;
-        margin: -75px 0 0 -100px;
+    .image img{
+        width: 100%;
     }
 
     &:hover {
-        .image {
-          opacity: 0.8;
+        .preview {
           display: none;
         }
     
-        .description{
+        .info{
             display: block;
         }
+
+
     }
     
-    .data{
-        height: 80%;
+    .preview{
+        height: 100%;
+    }
+
+    .info{
+        height: 100%;
+        display: none;
+        justify-content: space-between;
+        background-color: green;
+
     }
 
     .description{
         font-size: 15px;
-        color:#000;
-        display: none;
-        overflow: hidden;
-    }
-
-
-    .tags{
-        height: 20%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-
-    }
-
-    .tag{
-        background-color: tomato;
-        border-radius: 30px;
         color:#fff;
-        padding: 5px;
-        font-size: 10px;
-        margin: 2px;
-        
+        overflow: hidden;
+        padding:10px;   
+
+    }
+
+    .tags{ 
+        background-color: green;      
     }
 
 }

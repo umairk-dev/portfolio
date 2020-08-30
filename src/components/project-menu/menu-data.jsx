@@ -6,19 +6,19 @@ const MENU = [
     },
     {
         "name": "Android Apps",
-        "tags": ["Android","Java","Kotlin","Firebase"]
+        "tags": ["Android"]
     },
     {
         "name": "React-Native",
-        "tags": ["ReactJS","React-Native","Hybrid","NodeJS","MongoDB"]
+        "tags": ["ReactJS","React-Native","Hybrid"]
     },
     {
         "name": "Back-End Development",
-        "tags": ["NodeJS","Spring","RestAPI","SocketIO","JavaScript","Python"]
+        "tags": ["NodeJS","Spring","RestAPI","SocketIO","JavaScript","Python","JSP"]
     },
     {
         "name": "Front-end Development",
-        "tags": ["ReactJS","React-Native","JavaScript","WebRTC"]
+        "tags": ["ReactJS","React-Native","JavaScript","WebRTC","JQuery","Bootstrap"]
     },
 ];
 

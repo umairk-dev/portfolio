@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './social.styles.scss';
 
-function SocialIcon({name,color}) {
+function SocialIcon({type,name,color}) {
     console.log(name + " - " + color);
     return (
-        <FontAwesomeIcon className="icon" color={color} icon={["fab", `${name}`]} />
+        <FontAwesomeIcon className="icon" color={color} icon={[`${type}`, `${name}`]} />
     )
   }
    

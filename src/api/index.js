@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-
+//'http://206.189.148.177:4000/api'
 const api = axios.create({
-    baseURL :  'http://localhost:3000/api'
+    baseURL :  'http://localhost:4000/api'
 })
 
 
