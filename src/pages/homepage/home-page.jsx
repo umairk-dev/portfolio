@@ -3,6 +3,7 @@ import Typing from 'react-typing-animation';
 
 import './home.styles.scss';
 import Social from '../../components/social/social-component';
+import SocialIcon from '../../components/social/social-icon-component';
 
 class Home extends React.Component {
     render() {
@@ -31,8 +32,12 @@ class Home extends React.Component {
             <div className="social">
                <Social addColor={false}/>
             </div>
-            
-            
+            <div className="source">
+               I have developed this portfolio using MongoDB - ExpressJS- ReactJS - NodeJS You can download the source code from  
+               <a target="_blank" rel="noopener noreferrer"  href="https://github.com/umairk-dev">
+                     <SocialIcon  className="icon" color={"#fff"} type={"fab"} name={"github"}/>
+               </a>  
+            </div>
           </div>
        )
     }  
