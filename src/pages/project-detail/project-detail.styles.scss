@@ -1,0 +1,92 @@
+.project-detail {
+  font-size: 12px;
+  padding: 10px;
+  justify-content: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  min-width: 25vh;
+  background-color: white;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: 20px;
+  opacity: 0.8;
+
+  .icon {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    &:hover {
+      color: "green";
+    }
+  }
+  .title {
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    align-content: center;
+    color: green;
+  }
+
+  .content {
+    padding: 10px 5px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    padding: 10px;
+    min-height: 80vh;
+  }
+
+  .slides {
+    padding: 5px;
+    width: 25vh;
+  }
+
+  .landscaping {
+    width: 100vh;
+  }
+  .detail {
+    padding: 10px;
+    .desc {
+      padding: 5px;
+      justify-content: start;
+      text-align: start;
+    }
+
+    .links {
+      height: 10%;
+      padding: 5px;
+    }
+  }
+
+  .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+}
+
+.progress {
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

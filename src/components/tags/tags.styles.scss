@@ -1,21 +1,18 @@
+.tags {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 
-    .tags{
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap ;
-
-        .tag{
-            background-color: #008080;
-            border-radius: 30px;
-            color:#fff;
-            padding: 5px;
-            font-size: 8px;
-            margin: 2px;
-            
-        }
-
-    }
-
-   
+  .tag {
+    background-color: #008080;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    margin: 2px;
+    border-color: white;
+    border-width: 10px;
+  }
+}

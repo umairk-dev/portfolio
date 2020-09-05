@@ -1,11 +1,16 @@
-.gallery{
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-    
-    .stack{
-        text-align: start;
-    }
+.gallery {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
 
+  .menu {
+    margin: 10px;
+  }
+
+  .stack {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+  }
 }

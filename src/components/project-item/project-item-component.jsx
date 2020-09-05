@@ -1,37 +1,45 @@
-import React from 'react';
-import Popup from "reactjs-popup";
+import React, { useState } from "react";
+import "react-responsive-modal/styles.css";
 
-import './project-item.styles.scss'
+import "./project-item.styles.scss";
 
-import { withRouter } from "react-router-dom";
-import ProjectDetail from '../project-detail/project-detail-component';
-import Tags from '../tags/tags-component';
-
+import { withRouter, Link } from "react-router-dom";
+import Tags from "../tags/tags-component";
+import Image from "react-graceful-image";
 const ProjectItem = ({ item, history, match }) => {
-    return(
-        
-        <Popup trigger={
-            <div className="project-item" >
+  const [open, setOpen] = useState(false);
 
-                <div className="preview">
-                <div className="title">{item.name}</div>
+  const onOpenModal = () => {
+    setOpen({ opem: true });
+  };
 
-                    <div className="image">
-                        <img alt={item.name} src={`/static/images/${item.preview}`}/>
-                    </div>
-                </div>
+  const onCloseModal = () => {
+    setOpen({ opem: false });
+  };
 
-                <div className="info">
-                    <div className="description">{item.description}</div>
-                    <Tags tags={item.tags}/>
-                </div>
-                                
-            </div>
-            }     modal
-            closeOnDocumentClick>
-               <ProjectDetail item={item}/>
-        </Popup>
-    )
-}
+  return (
+    <Link
+      to={{
+        pathname: "/project-detail",
+        state: { _id: item._id },
+      }}
+    >
+      <div className="project-item" onClick={() => onOpenModal()}>
+        <div className="preview">
+          <div className="title">{item.name}</div>
+
+          <div className="image">
+            <Image alt={item.name} src={`/static/images/${item.preview}`} />
+          </div>
+        </div>
+
+        <div className="info">
+          <div className="description">{item.description}</div>
+          <Tags tags={item.tags} />
+        </div>
+      </div>
+    </Link>
+  );
+};
 
 export default withRouter(ProjectItem);
