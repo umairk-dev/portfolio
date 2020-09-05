@@ -5,31 +5,34 @@
     border-radius: 10px;
     cursor: pointer;
     height: 60px;
+    width: 100%;
+    background-color: white;
+
 
     .name{
-        font-size: 25px;
-        padding:15px;
+        font-size: 20px;
+        padding:10px;
         text-align: start;
-        width: 80%;
+        width: 70%;
     }
 
     
     .image{
-        font-size: 25px;
-        padding:10px;
+        font-size: 20px;
+        padding:5px;
     }
 
      
     .icon{
-        padding:10px;
-        font-size: 25px;
+        padding:5px;
+        font-size: 20px;
     }
 
     &:hover{
         background-color: yellowgreen;
         color: white;
         .icon{
-            padding:10px;
+            padding:6px;
             color: white;
         }
         .arrow{
